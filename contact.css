@@ -1,0 +1,223 @@
+/* CONTACT PAGE SPECIFIC STYLES */
+
+.bg-gray {
+    background: #f7f7f7;
+}
+
+/* TOP STRIP */
+.top-contact-strip {
+    background: white;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    border-bottom: 1px solid #ddd;
+}
+
+.strip-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.strip-item svg {
+    width: 14px;
+    height: 14px;
+}
+
+/* CONTACT CONTAINER */
+.contact-page {
+    padding: 40px 60px 80px 60px;
+}
+
+.container-inner {
+    max-width: 1000px;
+    /* Keep lines readable as per design */
+}
+
+/* BREADCRUMB */
+.breadcrumb {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.breadcrumb a {
+    color: #777;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.breadcrumb span {
+    font-weight: 600;
+    color: #000;
+}
+
+/* SUBTITLE / SECTION HEADERS */
+.section-title {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+.contact-section {
+    margin-bottom: 40px;
+}
+
+/* COMMON OUTLINED BOX */
+.outlined-box {
+    background: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 12px;
+    padding: 20px;
+}
+
+/* ROW BOX (Sign in) */
+.row-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-bg {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    background: #f0f0f0;
+}
+
+.icon-bg svg {
+    width: 24px;
+    height: 24px;
+}
+
+.box-text strong {
+    font-size: 16px;
+    color: #000;
+    font-weight: 700;
+}
+
+.box-text span {
+    font-size: 14px;
+    color: #555;
+}
+
+.btn-signin {
+    background: #0044ff;
+    color: white;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+/* QUICK LINKS (3 columns) */
+.quick-links-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-left {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.card-desc strong {
+    display: block;
+    font-size: 16px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.card-desc span {
+    display: block;
+    font-size: 13px;
+    color: #666;
+    line-height: 1.4;
+    padding-right: 15px;
+}
+
+/* PLUS BUTTONS */
+.btn-plus {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    display: flex;
+}
+
+.btn-plus svg {
+    width: 28px;
+    height: 28px;
+}
+
+/* BROWSE TOPICS (4 columns) */
+.topics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.pill-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.pill-box span {
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    line-height: 1.3;
+}
+
+/* GET IN TOUCH */
+.get-in-touch-text p {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.detail-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #444;
+    font-size: 14px;
+    font-weight: 500;
+}

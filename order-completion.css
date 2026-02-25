@@ -1,0 +1,111 @@
+/* ORDER COMPLETION SPECIFIC STYLES */
+
+.completion-wrapper {
+    background: white;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.completion-container {
+    width: 100%;
+    max-width: 1300px;
+    background: white;
+    padding: 20px 40px;
+    min-height: 500px;
+    /* Adjusting for the layout */
+}
+
+/* Centered Card Wrapper */
+.order-card-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 80px 0;
+}
+
+.order-success-card {
+    background: #A9FBA9;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    /* Optional subtle shadow */
+}
+
+.order-success-card h2 {
+    font-size: 24px;
+    font-weight: 800;
+    color: #000;
+    margin-bottom: 20px;
+}
+
+.success-msg {
+    font-size: 14px;
+    color: #333;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* Billing Grid Area */
+.billing-details {
+    text-align: left;
+    margin: 0 auto 30px auto;
+    width: 80%;
+    /* center the grid */
+}
+
+.billing-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 12px;
+}
+
+.billing-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.b-row {
+    display: flex;
+}
+
+.b-label {
+    flex: 0 0 80px;
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+}
+
+.b-value {
+    flex: 1;
+    font-size: 14px;
+    color: #000;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* Back Button */
+.btn-back {
+    display: inline-block;
+    background: #0044ff;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 800;
+    padding: 12px 50px;
+    border-radius: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.2s;
+}
+
+.btn-back:hover {
+    background: #0033cc;
+}

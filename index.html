@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PetPalooza</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="navbar">
+
+    <!-- TOP ROW -->
+    <div class="nav-top">
+
+      <div class="logo-box">
+        <img src="Images/logo.png" class="logo" alt="PetPalooza Logo">
+        <span class="logo-text">PetPalooza</span>
+      </div>
+
+      <input type="text" class="search-bar" placeholder="Search for products">
+
+      <div class="nav-right">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+
+        <a href="login.html" class="login-box" style="text-decoration: none;">
+          <img src="Images/loginicon.png" class="login-icon" alt="Login">
+          <span class="icon-text" style="color: white;">Login</span>
+        </a>
+
+        <a href="cart.html" class="cart" style="text-decoration: none;">
+          <img src="Images/carticon.png" class="cart-icon" alt="Cart">
+          <span class="icon-text" style="color: white;">Cart</span>
+          <span class="cart-badge">1</span>
+        </a>
+      </div>
+
+    </div>
+    <!-- BOTTOM ROW -->
+    <nav class="nav-bottom">
+      <button class="menu-item">Dog ▼</button>
+      <button class="menu-item">Cat ▼</button>
+      <button class="menu-item">Small Pets ▼</button>
+      <button class="menu-item">Pet Service ▼</button>
+      <button class="menu-item">Shop by Brand ▼</button>
+      <button class="menu-item">Shop by Breed ▼</button>
+      <button class="menu-item consult">Consult a Vet</button>
+    </nav>
+
+  </header>
+
+  <!-- HERO: Three horizontally stacked banners -->
+  <section class="hero-banners" aria-label="Featured promotions">
+    <div class="banner-grid">
+
+      <!-- Banner 1: Monsoon Edition -->
+      <article class="banner monsoon">
+        <div class="banner-media">
+          <img src="Images/doghero1.png" alt="Dog in raincoat" />
+        </div>
+        <div class="banner-content">
+          <div class="clouds-group">
+            <img src="Images/clouds.png" class="decor clouds" alt="Clouds" />
+            <div class="raindrops"><span></span><span></span><span></span></div>
+          </div>
+          <h2>Monsoon<br>Edition<br>for Dogs</h2>
+
+          <div class="waterproof-badge">
+            <div class="wp-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 12a10.06 10.06 1 0 0-20 0Z" />
+                <path d="M12 12v8a2 2 0 0 0 4 0" />
+                <path d="M12 2v1" />
+              </svg>
+            </div>
+            <p>100%<br>Water Proof</p>
+          </div>
+
+          <button class="btn-primary">Shop Now</button>
+          <img src="Images/umbrella.png" class="decor umbrella" alt="Umbrella" />
+        </div>
+        <div class="slider-dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </article>
+
+      <!-- Banner 2: Healthy Food Promo -->
+      <article class="banner healthy">
+        <div class="healthy-content">
+          <div class="pill">Get upto 40% Discount on all products</div>
+          <div class="dark-oval">
+            <h3>If you love your butties<br>You know what's good for them<br>Thats why we decided</h3>
+            <h2>NO ARTIFICIAL FOOD<br>NO TOXIC TOYA</h2>
+          </div>
+          <button class="btn-primary">Shop Now</button>
+        </div>
+        <img src="Images/doghero2.png" class="healthy-dog" alt="Healthy puppy" />
+        <div class="slider-dots">
+          <span class="dot"></span>
+          <span class="dot active"></span>
+          <span class="dot"></span>
+        </div>
+      </article>
+
+      <!-- Banner 3: Bandana Offer -->
+      <article class="banner bandana">
+        <div class="left-content">
+          <div class="diamond-wrapper">
+            <div class="diamond">
+              <div class="diamond-text">
+                <span>Only@</span><br>
+                <strong>₹ 399</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="thumbs">
+            <div class="thumb-box"><img src="Images/dogtuxedo.png" alt="Tuxedo bandana" /></div>
+            <div class="thumb-box"><img src="Images/dogtie.png" alt="Dog with bandana" /></div>
+          </div>
+
+          <div class="action-row">
+            <button class="btn-primary">Shop Now</button>
+            <div class="badge-save">Save 100</div>
+          </div>
+        </div>
+        <div class="banner-media">
+          <img src="Images/doghero3.png" alt="Pattern bandana dog" />
+        </div>
+        <div class="slider-dots">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot active"></span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SHOP BY PET SECTION -->
+  <section class="shop-by-pet" aria-label="Shop by Pet">
+    <h2 class="section-title">Shop by Pet</h2>
+
+    <div class="pet-slider-container">
+      <button class="slider-btn prev-btn" id="pet-prev" aria-label="Previous">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="m15 18-6-6 6-6" />
+        </svg>
+      </button>
+
+      <div class="pet-track" id="pet-track">
+        <div class="pet-item">
+          <div class="pet-circle"><img src="Images/Whitedog.png" alt="Dog"></div>
+          <p>Dog</p>
+        </div>
+        <div class="pet-item">
+          <div class="pet-circle"><img src="Images/cat.png" alt="Cat"></div>
+          <p>Cat</p>
+        </div>
+        <div class="pet-item">
+          <div class="pet-circle"><img src="Images/hamsters.png" alt="Hamsters"></div>
+          <p>Hamsters</p>
+        </div>
+        <div class="pet-item">
+          <div class="pet-circle"><img src="Images/guineapig.png" alt="Guinea pigs"></div>
+          <p>Guinea pigs</p>
+        </div>
+        <div class="pet-item">
+          <div class="pet-circle"><img src="Images/fish.png" alt="Fish"></div>
+          <p>Fish</p>
+        </div>
+        <div class="pet-item">
+          <div class="pet-circle"><img src="Images/rats.png" alt="Rats"></div>
+          <p>Rats</p>
+        </div>
+        <div class="pet-item">
+          <div class="pet-circle"><img src="Images/rabbits.png" alt="Rabbits"></div>
+          <p>Rabbits</p>
+        </div>
+      </div>
+
+      <button class="slider-btn next-btn" id="pet-next" aria-label="Next">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="m9 18 6-6-6-6" />
+        </svg>
+      </button>
+    </div>
+  </section>
+
+  <!-- TOP RATED CALMING PRODUCTS -->
+  <section class="calming-products" aria-label="Top Rated Calming Products">
+    <h2 class="section-title">Top Rated Calming Products</h2>
+
+    <div class="calming-container">
+      <div class="calm-left-card">
+        <img src="Images/stressfreecardimage.png" alt="Stress- Free Summer">
+        <h3>Stress- Free Summer</h3>
+        <p>Keep your pup calm along all season</p>
+      </div>
+
+      <div class="calm-carousel-wrapper">
+        <button class="slider-btn prev-btn" id="calm-prev" aria-label="Previous">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="m15 18-6-6 6-6" />
+          </svg>
+        </button>
+
+        <div class="calm-track" id="calm-track">
+
+          <div class="product-card">
+            <div class="product-img-wrap"><img src="Images/native pet.png" alt="Native Pet Calm Chews for Dogs"></div>
+            <p class="product-title">Native Pet Calm Chews for Dogs - Anxiety & Calming Supplement</p>
+            <div class="product-stars">
+              <span class="star filled">★</span><span class="star filled">★</span><span
+                class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span>
+            </div>
+            <div class="product-price">₹ 299</div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-wrap"><img src="Images/zestypaw.png" alt="Zesty Paws Advanced Calming Bites"></div>
+            <p class="product-title">Zesty Paws Advanced Calming Bites for Dogs</p>
+            <div class="product-stars">
+              <span class="star filled">★</span><span class="star filled">★</span><span
+                class="star filled">★</span><span class="star filled">★</span><span class="star">★</span>
+            </div>
+            <div class="product-price">₹ 309</div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-wrap"><img src="Images/vetiq.png" alt="VetIQ Calming"></div>
+            <p class="product-title">VetIQ Calming - 60 Count</p>
+            <div class="product-stars">
+              <span class="star filled">★</span><span class="star filled">★</span><span
+                class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span>
+            </div>
+            <div class="product-price">₹ 459</div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-wrap"><img src="Images/pethonesty.png" alt="Pet Honesty Hemp Calming"></div>
+            <p class="product-title">Pet Honesty Hemp Calming Max Strength Soft Chews</p>
+            <div class="product-stars">
+              <span class="star filled">★</span><span class="star filled">★</span><span
+                class="star filled">★</span><span class="star filled">★</span><span class="star">★</span>
+            </div>
+            <div class="product-price">₹ 599</div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-wrap"><img src="Images/zestpaw2.png" alt="Zesty Paws Hemp Elements"></div>
+            <p class="product-title">Zesty Paws Hemp Elements Calming Bites for Dogs</p>
+            <div class="product-stars">
+              <span class="star filled">★</span><span class="star filled">★</span><span
+                class="star filled">★</span><span class="star filled">★</span><span class="star">★</span>
+            </div>
+            <div class="product-price">₹ 499</div>
+          </div>
+
+          <div class="product-card">
+            <div class="product-img-wrap"><img src="Images/vetriscience.png" alt="VetriScience Composure"></div>
+            <p class="product-title">VetriScience Composure Calming Chews 45ct</p>
+            <div class="product-stars">
+              <span class="star filled">★</span><span class="star filled">★</span><span
+                class="star filled">★</span><span class="star filled">★</span><span class="star">★</span>
+            </div>
+            <div class="product-price">₹ 589</div>
+          </div>
+
+        </div>
+
+        <button class="slider-btn next-btn" id="calm-next" aria-label="Next">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3"
+            stroke-linecap="round" stroke-linejoin="round">
+            <path d="m9 18 6-6-6-6" />
+          </svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- AUTOSHIP BANNER -->
+  <section class="autoship-section" aria-label="Autoship Banner">
+    <div class="autoship-container">
+      <div class="autoship-content">
+        <h2>Store - Door savings with Autoship.</h2>
+        <p>SAVE 35% on first order plus stack limited-time deals<br>on top Auroship-items,see terms</p>
+        <button class="btn-shop-save">Shop & Save</button>
+      </div>
+      <div class="autoship-badge">
+        <span>Save<br><strong>35%</strong></span>
+      </div>
+      <div class="autoship-image">
+        <img src="Images/catanddog.png" alt="Cat and dog playing in grass">
+      </div>
+    </div>
+  </section>
+
+  <!-- PET SERVICES -->
+  <section class="pet-services" aria-label="Pet Services">
+    <div class="services-header">
+      <h2>Pet Servicess</h2>
+      <p>Treats Rewards members earn points on every service</p>
+    </div>
+
+    <div class="services-grid">
+      <!-- Grooming -->
+      <div class="service-card">
+        <div class="service-img">
+          <img src="Images/Grooming.png" alt="Grooming">
+        </div>
+        <div class="service-title-bar">Grooming</div>
+        <div class="service-desc">
+          Summer Salon Special<br>Bandana, toy & more plus 2X points
+        </div>
+      </div>
+
+      <!-- Training -->
+      <div class="service-card">
+        <div class="service-img">
+          <img src="Images/Training.png" alt="Training">
+        </div>
+        <div class="service-title-bar">Training</div>
+        <div class="service-desc">
+          Any 6-wk. Training Class<br>ONLY $129 (that's $21.50 a week)
+        </div>
+      </div>
+
+      <!-- Petshotel -->
+      <div class="service-card">
+        <div class="service-img">
+          <img src="Images/pethotel.png" alt="Petshotel">
+        </div>
+        <div class="service-title-bar">Petshotel</div>
+        <div class="service-desc">
+          Stay 4 nights<br>get the 5th night FREE
+        </div>
+      </div>
+
+      <!-- Diggy day camp -->
+      <div class="service-card">
+        <div class="service-img">
+          <img src="Images/diggydaycamp.png" alt="Diggy day camb">
+        </div>
+        <div class="service-title-bar">Diggy day camb</div>
+        <div class="service-desc">
+          New Camper Special<br>SAVE 50% on 1st day of play
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    const petTrack = document.getElementById('pet-track');
+    const petPrev = document.getElementById('pet-prev');
+    const petNext = document.getElementById('pet-next');
+
+    petPrev.addEventListener('click', () => {
+      petTrack.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+
+    petNext.addEventListener('click', () => {
+      petTrack.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+
+    const calmTrack = document.getElementById('calm-track');
+    const calmPrev = document.getElementById('calm-prev');
+    const calmNext = document.getElementById('calm-next');
+
+    calmPrev.addEventListener('click', () => {
+      calmTrack.scrollBy({ left: -300, behavior: 'smooth' });
+    });
+
+    calmNext.addEventListener('click', () => {
+      calmTrack.scrollBy({ left: 300, behavior: 'smooth' });
+    });
+  </script>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <img src="Images/logo.png" alt="PetPalooza Logo">
+        <span>PetPalooza</span>
+      </div>
+    </div>
+
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>PetPalooza</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="#">Dog</a></li>
+          <li><a href="#">Cat</a></li>
+          <li><a href="#">Fish</a></li>
+          <li><a href="#">Rats</a></li>
+          <li><a href="#">Rabbits</a></li>
+          <li><a href="#">Hamsters</a></li>
+          <li><a href="#">Guinea pigs</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Privacy policy</a></li>
+          <li><a href="#">Refund & returns policy</a></li>
+          <li><a href="#">Shipping policy</a></li>
+          <li><a href="#">Terms & conditions</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <div class="follow-section">
+          <h4>Follow</h4>
+          <div class="social-icons">
+            <!-- Facebook -->
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="white" stroke-width="2" fill="none"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+            </svg>
+            <!-- Instagram -->
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="white" stroke-width="2" fill="url(#ig-grad)"
+              stroke-linecap="round" stroke-linejoin="round">
+              <defs>
+                <linearGradient id="ig-grad" x1="20%" y1="100%" x2="80%" y2="0%">
+                  <stop offset="0%" stop-color="#fd5949" />
+                  <stop offset="50%" stop-color="#d6249f" />
+                  <stop offset="100%" stop-color="#285AEB" />
+                </linearGradient>
+              </defs>
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="none"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="white" fill="none"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white"></line>
+            </svg>
+            <!-- YouTube -->
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="none" fill="#FF0000" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+              </path>
+              <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"></polygon>
+            </svg>
+            <!-- WhatsApp -->
+            <svg viewBox="0 0 24 24" width="20" height="20" stroke="none" fill="#25D366" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path
+                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                fill-rule="evenodd" fill="white"></path>
+            </svg>
+          </div>
+        </div>
+
+        <div class="get-in-touch">
+          <h4>Get in Touch</h4>
+          <p>Call: +91-1234567890</p>
+          <p>Email:support@petpalooza.com</p>
+        </div>
+      </div>
+
+      <div class="footer-col subscribe-col">
+        <h4>For Subscribe,</h4>
+        <form class="subscribe-form" onsubmit="event.preventDefault();">
+          <input type="email" placeholder="Email" required>
+          <button type="submit">Subscribe Now</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

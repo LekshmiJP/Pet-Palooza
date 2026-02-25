@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPalooza - Log in</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body class="bg-gray">
+
+    <!-- TOP STRIP (Same as contact page) -->
+    <div class="top-contact-strip">
+        <div class="strip-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+            </svg>
+            <span>+91-1234567890</span>
+        </div>
+        <div class="strip-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+            <span>Support@petpalooza.com</span>
+        </div>
+    </div>
+
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-top">
+            <div class="logo-box">
+                <img src="Images/logo.png" class="logo" alt="PetPalooza Logo">
+                <span class="logo-text">PetPalooza</span>
+            </div>
+
+            <input type="text" class="search-bar" placeholder="Search for products">
+
+            <div class="nav-right">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+
+                <a href="login.html" class="login-box" style="text-decoration: none;">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                    </svg>
+                    <span class="icon-text" style="color: var(--accent);">Log In</span>
+                </a>
+
+                <a href="cart.html" class="cart" style="text-decoration: none;">
+                    <img src="Images/carticon.png" class="cart-icon" alt="Cart">
+                    <span class="icon-text" style="color: white;">Cart</span>
+                    <span class="cart-badge">1</span>
+                </a>
+            </div>
+        </div>
+
+        <nav class="nav-bottom">
+            <button class="menu-item">Dog ▼</button>
+            <button class="menu-item">Cat ▼</button>
+            <button class="menu-item">Small pets ▼</button>
+            <button class="menu-item">Pet Service ▼</button>
+            <button class="menu-item">Shop by Brand ▼</button>
+            <button class="menu-item">Shop by Breed ▼</button>
+            <button class="menu-item consult">Consult a Vet</button>
+        </nav>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="login-wrapper">
+        <!-- Inner card box bridging nav and footer -->
+        <div class="login-card">
+
+            <!-- Top inner nav & Title -->
+            <div class="breadcrumb" style="margin-bottom: 5px;">
+                <a href="index.html">Home</a> / <span>Log in</span>
+            </div>
+
+            <h2 class="account-title">Account</h2>
+
+            <!-- Green Strip Header -->
+            <div class="login-header-strip">
+                <div class="col-title" style="transform: translateX(-50px);">Returning customer</div>
+                <div class="col-title" style="transform: translateX(45px);">New customer</div>
+            </div>
+
+            <!-- Login Form Area -->
+            <div class="login-body">
+
+                <!-- Left Column -->
+                <div class="login-col left-col">
+                    <form class="login-form" onsubmit="event.preventDefault();">
+                        <div class="input-grp">
+                            <label>Email<span class="req">*</span></label>
+                            <input type="email" required>
+                        </div>
+
+                        <div class="input-grp">
+                            <label>Password<span class="req">*</span></label>
+                            <input type="password" required>
+                        </div>
+
+                        <button type="submit" class="btn-login-bold">Log in</button>
+
+                        <a href="#" class="forgot-link">Forget your password?</a>
+                    </form>
+                </div>
+
+                <!-- Divider -->
+                <div class="login-divider">
+                    <span class="or-text">Or</span>
+                </div>
+
+                <!-- Right Column -->
+                <div class="login-col right-col">
+                    <p class="new-cust-info">
+                        Register with us for a faster checkout,<br>
+                        to track the status of your order and more.
+                    </p>
+                    <button class="btn-create-acc">Create an account</button>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-top">
+            <div class="footer-logo">
+                <img src="Images/logo.png" alt="PetPalooza Logo">
+                <span>PetPalooza</span>
+            </div>
+        </div>
+
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>PetPalooza</h4>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#">Dog</a></li>
+                    <li><a href="#">Cat</a></li>
+                    <li><a href="#">Fish</a></li>
+                    <li><a href="#">Rats</a></li>
+                    <li><a href="#">Rabbits</a></li>
+                    <li><a href="#">Hamsters</a></li>
+                    <li><a href="#">Guinea pigs</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Refund & returns policy</a></li>
+                    <li><a href="#">Shipping policy</a></li>
+                    <li><a href="#">Terms & conditions</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <div class="follow-section">
+                    <h4>Follow</h4>
+                    <div class="social-icons">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="white" stroke-width="2" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg>
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="white" stroke-width="2"
+                            fill="url(#ig-grad)" stroke-linecap="round" stroke-linejoin="round">
+                            <defs>
+                                <linearGradient id="ig-grad" x1="20%" y1="100%" x2="80%" y2="0%">
+                                    <stop offset="0%" stop-color="#fd5949" />
+                                    <stop offset="50%" stop-color="#d6249f" />
+                                    <stop offset="100%" stop-color="#285AEB" />
+                                </linearGradient>
+                            </defs>
+                            <rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke="none"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" stroke="white" fill="none"></path>
+                            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke="white"></line>
+                        </svg>
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="none" fill="#FF0000"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z">
+                            </path>
+                            <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="white"></polygon>
+                        </svg>
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="none" fill="#25D366"
+                            stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                                fill-rule="evenodd" fill="white"></path>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="get-in-touch">
+                    <h4>Get in Touch</h4>
+                    <p>Call: +91-1234567890</p>
+                    <p>Email:support@petpalooza.com</p>
+                </div>
+            </div>
+
+            <div class="footer-col subscribe-col">
+                <h4>For Subscribe,</h4>
+                <form class="subscribe-form" onsubmit="event.preventDefault();">
+                    <input type="email" placeholder="Email" required>
+                    <button type="submit">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
